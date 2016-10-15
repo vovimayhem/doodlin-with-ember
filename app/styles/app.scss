@@ -1,0 +1,35 @@
+$enable-flex: true !important;
+$body-bg:       #F8F8F8 !default;
+$brand-primary: #0033A0 !default;
+$brand-inverse: #0033A0 !default; // Foresight blue
+
+// Table stripping:
+$table-bg-accent: #DADFE1 !default;
+
+@import "bootstrap";
+
+body {
+  padding-top: 5rem;
+  font-family: 'Oxygen', sans-serif;
+  .bg-inverse { color: $brand-primary; background-color: $brand-inverse; }
+}
+
+.doodlin-navbar {
+  @extend .navbar;
+  @extend .navbar-fixed-top;
+  @extend .navbar-dark;
+  @extend .bg-inverse;
+
+  .navbar-brand {
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 0.4rem;
+  }
+}
+// @import "buttons";
+// @import "tables";
+// @import "navbar";
+// @import "analyzable-lists";
+// @import "projects";
+// @import "projects-dashboard";
+// @import "foresight";
